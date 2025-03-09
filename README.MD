@@ -2,11 +2,11 @@
   <br />
   <img
     src="./_docs/assets/icon.png"
-    alt="Mega Man Robots API"
+    alt="API de Robôs do Mega Man"
     width="150"
   />
   <br />
-  <b>Mega Man Robots API</b>
+  <b>API de Robôs do Mega Man</b>
   <br />
   <sub
     ><sup><b>(MEGA-MAN-ROBOTS)</b></sup></sub
