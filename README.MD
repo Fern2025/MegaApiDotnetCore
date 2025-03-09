@@ -14,11 +14,7 @@
   <br />
   <a
     href="https://github.com/felipeAguiarCode/MegaApiDotnetCore/actions/workflows/build.yml"
-  >
-    <img
-      src="https://github.com/felipeAguiarCode/MegaApiDotnetCore/actions/workflows/build.yml/badge.svg"
-      alt="Status do Build"
-    />
+  
   </a>
   <a href="https://github.com/felipeAguiarCode/MegaApiDotnetCore/releases/latest">
     <img
