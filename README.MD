@@ -17,134 +17,88 @@
   >
     <img
       src="https://github.com/felipeAguiarCode/MegaApiDotnetCore/actions/workflows/build.yml/badge.svg"
-      alt=""
+      alt="Status do Build"
     />
   </a>
   <a href="https://github.com/felipeAguiarCode/MegaApiDotnetCore/releases/latest">
     <img
       src="https://img.shields.io/github/v/release/felipeAguiarCode/MegaApiDotnetCore"
-      alt="Latest Release"
+      alt="Última Versão"
     />
   </a>
 </h1>
 
 <p align="center">
-  This .NET Core API is designed to serve JSON formatted data about bosses from
-  the Mega Man series. It is a backend service built with .NET Core 3.1 and
-  various modern dependencies for data management and API response handling.
-  <br />
-</p>
-
-<p align="center">
-  Developed with Entity Framework Core and other modern .NET technologies, this
-  project aims to provide a robust API for accessing Mega Man robot data.
+  Esta é uma API (serviço online) que fornece informações sobre os chefes robóticos da série Mega Man. 
+  Ela foi criada para desenvolvedores que desejam acessar dados como nomes, habilidades e detalhes dos robôs em formato JSON.
   <br />
 </p>
 
 <p align="center">
   <br />
-  <img src="./_docs/assets/carbon.png" />
+  <img src="./_docs/assets/carbon.png" alt="Exemplo de código" />
 </p>
 
-## API Endpoints
+## Como Funciona? 🛠️
+
+- **Para desenvolvedores**: Você pode fazer solicitações HTTP (como buscar ou adicionar dados) usando os endpoints abaixo.
+- **Dados organizados**: A API usa tecnologias modernas para garantir que as informações sejam rápidas e confiáveis.
+
+## Endpoints Principais 🌐
 
 <table align="center">
   <tr>
-    <th>Method</th>
+    <th>Método</th>
     <th>Endpoint</th>
-    <th>Description</th>
+    <th>O que faz?</th>
   </tr>
   <tr>
     <td>GET</td>
-    <td>/api/v1/robots</td>
-    <td>Returns a list of all robots</td>
+    <td><code>/api/v1/robots</code></td>
+    <td>Lista todos os robôs disponíveis</td>
   </tr>
   <tr>
     <td>GET</td>
-    <td>/api/v1/robots/{id}</td>
-    <td>Returns details of a specific robot by ID</td>
+    <td><code>/api/v1/robots/{id}</code></td>
+    <td>Mostra detalhes de um robô específico (substitua <code>{id}</code> pelo número do robô)</td>
   </tr>
   <tr>
     <td>POST</td>
-    <td>/api/v1/robots</td>
-    <td>Endpoint to create a new robot entry</td>
+    <td><code>/api/v1/robots</code></td>
+    <td>Adiciona um novo robô à lista (requer configuração técnica)</td>
   </tr>
 </table>
 
-## Techniques Used
+## Tecnologias Usadas 💻
 
-<p align="center">
-  - <b>Entity Framework Core:</b> ORM for data management.<br />
-  - <b>RESTful API Design:</b> Ensures clear and effective communication
-  endpoints.<br />
-  - <b>Dependency Injection:</b> Used throughout to promote loose coupling and
-  enhanced testability.<br />
-</p>
+- **Entity Framework Core**: Gerencia os dados como um "organizador" de banco de dados.
+- **RESTful API**: Padrão para criar serviços web de forma clara e eficiente.
+- **Injeção de Dependência**: Técnica para tornar o código mais flexível e fácil de testar.
 
-## Dependencies
+## Bibliotecas Importantes 📚
 
 <table align="center">
   <tr>
-    <th>Package</th>
-    <th>Version</th>
+    <th>Biblioteca</th>
+    <th>Versão</th>
     <th>Link</th>
   </tr>
   <tr>
     <td>Microsoft.EntityFrameworkCore</td>
     <td>3.1.8</td>
-    <td>
-      <a
-        href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/3.1.8"
-        >NuGet</a
-      >
-    </td>
-  </tr>
-  <tr>
-    <td>Microsoft.EntityFrameworkCore.Design</td>
-    <td>3.1.8</td>
-    <td>
-      <a
-        href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/3.1.8"
-        >NuGet</a
-      >
-    </td>
-  </tr>
-  <tr>
-    <td>Microsoft.EntityFrameworkCore.SqlServer</td>
-    <td>3.1.8</td>
-    <td>
-      <a
-        href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/3.1.8"
-        >NuGet</a
-      >
-    </td>
+    <td><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/3.1.8">NuGet</a></td>
   </tr>
   <tr>
     <td>Newtonsoft.Json</td>
     <td>12.0.2</td>
-    <td>
-      <a href="https://www.nuget.org/packages/Newtonsoft.Json/12.0.2">NuGet</a>
-    </td>
+    <td><a href="https://www.nuget.org/packages/Newtonsoft.Json/12.0.2">NuGet</a></td>
   </tr>
 </table>
 
-## :gear: Arch
+## Licença 📜
+Este projeto é open source e está sob a licença [MIT](https://opensource.org/licenses/MIT), que permite uso livre desde que os créditos sejam mantidos.
 
-```🌐
-src
-├── 📂 Controllers      [Routes for endpoints]
-├── 📂 Models           [Database models]
-├── 📂 Services         [Business rules]
-├── 📂 Middlewares      [Intermediate functions between the HTTP request and the final server response]
-├── 📂 Database         [Structures related to the database]
-│   ├── 📂 DTOs             [Input Models and View Models (Data Transfer Objects)]
-│   ├── 📂 EntityFramework  [Files related to the ORM Entity Framework]
-│   │     ├── 📂 Context         [Entity context settings]
-│   │     ├── 📂 Migrations      [Migrations for database updates]
-│   ├── 📂 Repositories     [Repository pattern]
-```
+---
 
-## License This software is licensed under the terms of the [MIT]
-
-⌨️ FelipeAguiar -
-[Github](https://github.com/felipeAguiarCode)
+⌨️ Desenvolvido por **Felipe Aguiar** - 
+[GitHub](https://github.com/felipeAguiarCode)
